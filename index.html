@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ed8a5cc8a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Static Template</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar which includes home,artist links,search button and notifications icon -->
+    <nav>
+      <div class="nav-flex">
+        <div>
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <div>
+          <h4>Dhanda Playlist</h4>
+        </div>
+        <div>
+          <!-- Home, Artists in the form of horizontal list -->
+          <ul class="horizontal">
+            <li><a href="#">Home </a></li>
+            <li><a href="#artist">Artists</a></li>
+          </ul>
+        </div>
+      </div>
+      <input type="text" placeholder="Search Song" class="nav-search" />
+      <i class="fa-solid fa-bars heisen"></i>
+      <i class="fa-solid fa-bell notification"></i>
+      <ul class="vertical">
+        <li><a href="">Home </a></li>
+        <li><a href="">Artist</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- carousel built using animation -->
+      <div class="big">
+        <div class="carousel">
+          <div class="carousel-body carousel-flex">
+            <div class="flex-body">
+              <img src="linkin park.jfif" type="jfif" class="carousel-img" />
+            </div>
+            <div class="flex-body carousel-text">
+              Linkin Park is an American rock band from Agoura Hills,
+              California. The band's current lineup comprises vocalist/rhythm
+              guitarist/keyboardist Mike Shinoda, lead guitarist Brad Delson,
+              bassist Dave Farrell, DJ/turntablist Joe Hahn and drummer Rob
+              Bourdon, all of whom are founding members.
+            </div>
+          </div>
+          <div class="carousel-body carousel-flex">
+            <div class="flex-body">
+              <img src="green day.jpg" type="jpg" class="carousel-img" />
+            </div>
+            <div class="flex-body carousel-text">
+              Green Day is an American rock band formed in the East Bay of
+              California in 1987 by lead vocalist and guitarist Billie Joe
+              Armstrong, together with bassist and backing vocalist Mike Dirnt.
+              For most of the band's career, they have been a power trio[1] with
+              drummer Tré Cool, who replaced John Kiffmeyer in 1990 before the
+              recording of the band's second studio album, Kerplunk (1991).
+            </div>
+          </div>
+        </div>
+        <!-- home screen songs displayed using flex -->
+        <!-- responsiveness handled using flex as well -->
+        <div class="small">
+          <div class="small-flex-1">
+            <img class="small-image" src="guitar.jfif" type="jfif" />
+          </div>
+          <div class="small-flex-2">
+            <span class="small-name">Linkin Park - Numb </span> <br />
+            <audio controls>
+              <source src="gold.mp3" type="audio/mp3" /></audio
+            ><br />
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="small">
+          <div class="small-flex-1">
+            <img class="small-image" src="drums.jfif" type="jfif" />
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="small-flex-2">
+            <span class="small-name">21 Guns - Holiday </span> <br />
+            <audio controls>
+              <source src="gold.mp3" type="audio/mp3" />
+            </audio>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="small">
+          <div class="small-flex-1">
+            <img class="small-image" src="superman.jpg" type="jpg" />
+          </div>
+          <div class="small-flex-2">
+            <span class="small-name">Eminem - Superman </span> <br />
+            <audio controls>
+              <source src="gold.mp3" type="audio/mp3" />
+            </audio>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="small">
+          <div class="small-flex-1">
+            <img class="small-image" src="theend.jpg" type="jpg" />
+          </div>
+          <div class="small-flex-2">
+            <span class="small-name">
+              Linkin Park - In the end
+            </span>
+            <audio controls>
+              <source src="gold.mp3" type="audio/mp3" />
+            </audio>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </div>
+      <!-- artist section build is similar to previous, only difference is border-radius of images -->
+      <div class="artist-flex" id="artist">
+        <h1 class="heading">Similar Artists</h1>
+        <div class="artist-flex-2">
+          <div class="small-artist-flex">
+            <div class="small-artist-item-1">
+              <img class="artist-img" src="metallica.jpg" />
+            </div>
+            <div class="small-artist-item-2 artist-text">
+              Metallica
+            </div>
+          </div>
+          <div class="small-artist-flex">
+            <div class="small-artist-item-1">
+              <img src="nirvana.jfif" class="artist-img" />
+            </div>
+            <div class="small-artist-item-2 artist-text">
+              Nirvana
+            </div>
+          </div>
+          <div class="small-artist-flex">
+            <div class="small-artist-item-1">
+              <img src="beatles.jpg" class="artist-img" />
+            </div>
+            <div class="small-artist-item-2 artist-text">
+              Beatles
+            </div>
+          </div>
+          <div class="small-artist-flex">
+            <div class="small-artist-item-1">
+              <img src="coldplay.jfif" class="artist-img" />
+            </div>
+            <div class="small-artist-item-2 artist-text">
+              Coldplay
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- aside section includes recently played songs -->
+    <aside>
+      <div class="played-flex">
+        <div class="aside-heading">
+          <h2>Recently Played</h2>
+        </div>
+        <div class="flex-item">
+          <div class="small-flex-item-1">
+            <img class="flex-img" src="flow.jfif" />
+          </div>
+          <div class="small-flex-item-2 artist-text">
+            Nomyn - Flow
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="small-flex-item-1">
+            <img class="flex-img" src="goosebumps.jpeg" />
+          </div>
+          <div class="small-flex-item-2 artist-text">
+            Travis Scott - Goosebumps
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="small-flex-item-1">
+            <img class="flex-img" src="fragments.jpg" />
+          </div>
+          <div class="small-flex-item-2 artist-text">
+            Nomyn - Fragments
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- this is non-functional player, showing the current song being played -->
+    <div class="player-flex">
+      <div class="small-player-flex">
+        <img class="player-img" src="ocean.jfif" /><span class="player-text">
+          Sunshine
+        </span>
+      </div>
+      <div class="small-player-flex">
+        <ul class="horizontal-player">
+          <li><i class="fa-solid fa-backward"></i></li>
+          <li><i class="fa-solid fa-play"></i></li>
+          <li><i class="fa-solid fa-forward"></i></li>
+        </ul>
+      </div>
+      <div class="small-player-flex-last">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
